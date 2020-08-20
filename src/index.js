@@ -142,7 +142,7 @@ export const ReactCarousel = (props) => {
       {/* <img src={url('https://picsum.photos/600/400')} /> */}
       <div className={classes.slider}>
         {Array.from(Array(slides.length).keys()).map((num) => (
-          <a href={`#slide-${num + 1}`}>
+          <a href={`#slide-${num + 1}${props.uniquePostfix}`} key={num}>
             {props.carouselNavButtonsType === 'number' ? num + 1 : ''}
           </a>
           // {props.carouselNavButtonsPosition === 'number' ? num + 1 : ''}
@@ -150,7 +150,7 @@ export const ReactCarousel = (props) => {
       </div>
       <div className={classes.slides}>
         {Array.from(Array(slides.length).keys()).map((num) => (
-          <div id={`slide-${num + 1}`}>
+          <div id={`slide-${num + 1}${props.uniquePostfix}`} key={num}>
             {/* <image src={slides[num]} style={{ width: 200, height: 200 }} /> */}
             <img
               src={slides[num]}
