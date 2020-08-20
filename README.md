@@ -1,8 +1,8 @@
-# react-nice-crousel
+# react-nice-carousel
 
 > simple but useful carousel for react
 
-[![NPM](https://img.shields.io/npm/v/react-nice-crousel.svg)](https://www.npmjs.com/package/react-nice-crousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-nice-carousel.svg)](https://www.npmjs.com/package/react-nice-carousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 <div align="center">
     <img src="./react-nice-carousel.gif" width="550">
@@ -11,7 +11,7 @@
 ## Install
 
 ```bash
-npm install --save react-nice-crousel
+npm install --save react-nice-carousel
 ```
 
 ## Usage

@@ -1,10 +1,10 @@
 {
-  "name": "react-nice-crousel",
-  "version": "1.0.3",
+  "name": "react-nice-carousel",
+  "version": "1.0.4",
   "description": "simple but useful react carousel",
   "author": "alithecodeguy",
   "license": "MIT",
-  "repository": "alithecodeguy/react-nice-crousel",
+  "repository": "alithecodeguy/react-nice-carousel",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
