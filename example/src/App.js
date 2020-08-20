@@ -1,10 +1,20 @@
 import React from 'react'
-
-import { ExampleComponent } from 'react-carousel'
-import 'react-carousel/dist/index.css'
+import { ReactCarousel } from 'react-carousel'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <ReactCarousel
+      slides={[
+        'https://picsum.photos/600/400',
+        'http://lorempixel.com/600/400/'
+      ]} // array of images urls
+      scrollDirection='yAxis' // xAxis , yAxis
+      carouselBoxHeight={400} // image height and this must be the same
+      carouselBoxWidth={600} // image width and this must be the same
+      carouselNavButtonsPosition={'right'} // top , right , bottom , left
+      carouselNavButtonsType={'dash'} // dash , number
+    />
+  )
 }
 
 export default App
