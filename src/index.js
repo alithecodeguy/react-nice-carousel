@@ -1,14 +1,15 @@
+// core
 import React from 'react'
 import { createUseStyles } from 'react-jss'
+
+// styles
 const useStyles = createUseStyles({
   root: {
     overflow: 'hidden',
     padding: 0,
     margin: 0,
-    // border: '1px solid red',
     width: (props) => props.carouselBoxWidth + 35,
     height: (props) => props.carouselBoxHeight + 35,
-
     display: 'flex',
     flexDirection: (props) => {
       switch (props.carouselNavButtonsPosition) {
@@ -130,33 +131,34 @@ const useStyles = createUseStyles({
       alignItems: 'center',
       fontSize: 100
     }
+  },
+  carouselImage: {
+    width: (props) => props.carouselBoxWidth,
+    height: (props) => props.carouselBoxHeight,
+    borderRadius: 13
   }
 })
 
-export const ReactCarousel = (props) => {
-  const { slides, scrollDirection } = props
+export const ReactNiceCarousel = (props) => {
+  const { slides, uniquePostfix, carouselNavButtonsType } = props
   const classes = useStyles(props)
 
   return (
     <div className={classes.root}>
       <div className={classes.slider}>
         {Array.from(Array(slides.length).keys()).map((num) => (
-          <a href={`#slide-${num + 1}${props.uniquePostfix}`} key={num}>
-            {props.carouselNavButtonsType === 'number' ? num + 1 : ''}
+          <a href={`#slide-${num + 1}${uniquePostfix}`} key={num}>
+            {carouselNavButtonsType === 'number' ? num + 1 : ''}
           </a>
         ))}
       </div>
       <div className={classes.slides}>
         {Array.from(Array(slides.length).keys()).map((num) => (
-          <div id={`slide-${num + 1}${props.uniquePostfix}`} key={num}>
+          <div id={`slide-${num + 1}${uniquePostfix}`} key={num}>
             <img
               src={slides[num]}
-              alt='new'
-              style={{
-                width: props.carouselBoxWidth,
-                height: props.carouselBoxHeight,
-                borderRadius: 13
-              }}
+              alt='carousel image'
+              className={classes.carouselImage}
             />
           </div>
         ))}

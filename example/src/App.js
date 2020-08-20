@@ -1,11 +1,15 @@
+// core
 import React from 'react'
-import { ReactCarousel } from 'react-carousel'
+import { ReactNiceCarousel } from 'react-nice-carousel'
+
+// mui
 import Grid from '@material-ui/core/Grid'
-const App = () => {
+
+const Example = () => {
   return (
     <Grid container spacing={2}>
       <Grid item xs={6}>
-        <ReactCarousel
+        <ReactNiceCarousel
           slides={[
             'https://picsum.photos/600/400',
             'http://lorempixel.com/600/400/',
@@ -20,7 +24,7 @@ const App = () => {
         />
       </Grid>
       <Grid item xs={6}>
-        <ReactCarousel
+        <ReactNiceCarousel
           slides={[
             'https://picsum.photos/600/400',
             'http://lorempixel.com/600/400/'
@@ -34,7 +38,7 @@ const App = () => {
         />
       </Grid>
       <Grid item xs={6}>
-        <ReactCarousel
+        <ReactNiceCarousel
           slides={[
             'https://picsum.photos/600/400',
             'http://lorempixel.com/600/400/',
@@ -50,7 +54,7 @@ const App = () => {
         />
       </Grid>
       <Grid item xs={6}>
-        <ReactCarousel
+        <ReactNiceCarousel
           slides={[
             'https://picsum.photos/600/400',
             'http://lorempixel.com/600/400/'
@@ -68,4 +72,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Example
