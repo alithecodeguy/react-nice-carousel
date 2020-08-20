@@ -10,10 +10,11 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "react": "file:../node_modules/react",
+    "react-carousel": "file:..",
     "react-dom": "file:../node_modules/react-dom",
-    "react-scripts": "file:../node_modules/react-scripts",
-    "react-carousel": "file:.."
+    "react-scripts": "file:../node_modules/react-scripts"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
